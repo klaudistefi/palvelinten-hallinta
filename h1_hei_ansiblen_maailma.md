@@ -169,27 +169,40 @@ Se sitten määrittää, että Ansible suorittaa hello "roolin" kaikilla hosts.i
 
 <img width="1099" height="271" alt="c11" src="https://github.com/user-attachments/assets/624fc326-f0e5-4e91-a538-65dc2683add5" />
 
-
-
-
-
+### TEst
+Suoritin playbookin:
+```
+ansible-playbook site.yml
+```
+Sitten tarkistin SSH yhteyden kautta, että tiedosto oli luotu ja sisälsi oikean tekstin.
 
 ```
 ssh localhost 'cat /tmp/hello-ansible'
 ```
+<img width="1189" height="194" alt="c13" src="https://github.com/user-attachments/assets/9b02ac0d-be6f-4d11-983c-26a73b19b17c" />
+
+<img width="703" height="35" alt="c14" src="https://github.com/user-attachments/assets/6042dafc-98ef-499f-9de5-73c7ddd5e59e" />
+
+
+
+Tarkistin hakemistorakenteen tree komennolla.
+
+
+<img width="749" height="339" alt="clast" src="https://github.com/user-attachments/assets/3cd13f1c-507b-44a8-8d02-6ba24d5e90e4" />
 
 
 
 
 
+### Error
 
-Had to go a bit bad and forth. But eventually got it right. 
+Tehtävän aikana tuli pari ongelma. Otin pari kuvakaappausta, mutta ei kaikkia. Minusta oli vaikeaa samanaikaisesti tehdä kaikki, ottaa kuvakaappauksia ja tallentaa tietoja. Keskityin niin paljon ongelmien korjaamiseen, että unohdin ottaa kuvakaappauksen.  Yritän parantaa seuraavassa raportissa.
 
+Aluksi, kun yritin suorittaa komennon "ansible-playbook site.yml", sain virheilmoituksen. Virhe näytti liittyvän tiettyyn sarakkeeseen tai muotoiluun koodissa. Oonnistuin ratkaisemaan ongelman kopioimalla koodin suoraan verkkosivuston ohjeista.
 
+<img width="1264" height="140" alt="c10" src="https://github.com/user-attachments/assets/b3a8d521-7243-46c8-96bf-9d75ad78c708" />
 
-
-
-
+<img width="711" height="115" alt="c12" src="https://github.com/user-attachments/assets/03b8d42c-12fc-4eb0-99bd-0f23bc602911" />
 
 
 
