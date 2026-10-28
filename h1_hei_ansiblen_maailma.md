@@ -7,7 +7,7 @@
 **27.10.2026**  <br>
 **28.10.2026**  <br>
 
-## x) Tiivistelmät 
+# x) Tiivistelmät 
 Karvinen 2026: SSH public key - Login without password
 - Helppo tapa kirjautua ilman salasanan kirjoittamista joka kerta
 - Päivitetään Linux ja luodaan julkinen avain
@@ -18,14 +18,14 @@ Karvinen 2026: Hello Ansible
 - Ansible on työkalu, sillä voidaan hallita ja määrittää tietokoneita
 - Ansible ei ole helpoin työkalu aloittelijalle (minulle), mutta sen käyttöä voi oppia 
 
-## a) Asenna Debian 13 paikallisesti virtuaalikoneeseen.
+# a) Asenna Debian 13 paikallisesti virtuaalikoneeseen.
 
 VirtualBox oli jo asennettu. Asensin vain uuden Debian virtuaalikoneen. Käytin [minun vanhoja](https://github.com/klaudistefi/linux-course/blob/main/h1_oma_Linux_raportti.md) sekä kurssilla annettuja [ohjeita](https://github.com/punnalathomas/linux-course/blob/main/h1-installing-linux.md). Asennus meni hyvin, patsi virtuaalikoneen käynnistyksessä tuli virhe. Kone ei käynnistynyt, vaan näytölle tuli viesti ”ABORTED”. Tietokoneen uudelleenkäynnistyksen jälkeen virtuaalikone kuitenkin käynnistyi normaalisti.
 
 Asetukset: Base Memory: 4090 MB, Number of CPUs: 2, Disk Size: 60 GB. Kieli: English, Sijainti: Other - Europe - Finland, Locale: en_US.UTF-8, Näppäimistö: Finnish, Hostname: debian, Levyn osiointi: Guided – use entire disk, Osiointi: All files in one partition, Valitaan: Finish partitioning and write changes to disk, partation disk : YES
 
 
-##  b) Sshecrets. Asenna SSH-demoni käsin ja testaa se kirjautumalla SSH:lla. (localhost) ja c) Pubkey. Automatisoi ssh-kirjautuminen julkisella avaimella. (localhost)
+# b) Sshecrets. Asenna SSH-demoni käsin ja testaa se kirjautumalla SSH:lla. (localhost) ja c) Pubkey. Automatisoi ssh-kirjautuminen julkisella avaimella. (localhost)
 
 Ensin päivitin järjestelmän ja asensin SSH-palvelimen.
 ```
@@ -83,7 +83,7 @@ exit
 <img width="570" height="34" alt="7" src="https://github.com/user-attachments/assets/de79f98a-43e6-407d-8658-8e15f8b56d30" />
 
 
-## d) Hei Ansible. Tee hei maailma ansiblella ja kokeile sitä SSH:n yli. (localhost)
+# d) Hei Ansible. Tee hei maailma ansiblella ja kokeile sitä SSH:n yli. (localhost)
 
 Päivitin järjestelmän ja asensin Ansiblen sekä muut tarvittavat ohjelmat.
 
@@ -211,7 +211,7 @@ Aluksi, kun yritin suorittaa komennon "ansible-playbook site.yml", sain virheilm
 
 
 
-## Lähteet: 
+# Lähteet: 
 Heinonen, Johanna 2025. How to Install Linux to Virtualbox? Luettavissa: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md#1-virtualbox-installation
 
 Tero Karvinen – Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa)
