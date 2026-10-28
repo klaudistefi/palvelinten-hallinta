@@ -27,53 +27,50 @@ Asetukset: Base Memory: 4090 MB, Number of CPUs: 2, Disk Size: 60 GB. Kieli: Eng
 
 ##  b) Sshecrets. Asenna SSH-demoni käsin ja testaa se kirjautumalla SSH:lla. (localhost) ja c) Pubkey. Automatisoi ssh-kirjautuminen julkisella avaimella. (localhost)
 
-Updated the system and Install the OpenSSH-server package
-
+Ensin päivitin järjestelmän ja asensin SSH-palvelimen.
 ```
 sudo apt-get update
-```
-```
 sudo apt-get -y install ssh
 ```
+ <br>
 <img width="1112" height="108" alt="1" src="https://github.com/user-attachments/assets/68308557-74a1-4782-85bb-9b5aa32c20a5" />
 <img width="799" height="89" alt="2" src="https://github.com/user-attachments/assets/61231159-f271-4995-b87d-64d4be120c90" />
 
+Laitoin SSH palvelun käynnistymään.
 
-
-Make SSH daemon start on boot (enable) and also start it now (--now)
 ```
 sudo systemctl enable --now ssh
 ```
+ <br>
 <img width="1394" height="70" alt="3" src="https://github.com/user-attachments/assets/4fdcec43-3b06-4f87-ae2b-76fbbbc04109" />
 
-Generate a keypair to Automatic login with SSH public key:
+Loin avainparin SSH kirjautumista varten ja kopioin julkisen avaimen localhost osoitteeseen.
 ```
 ssh-keygen
 ```
+ <br>
 <img width="1065" height="509" alt="4 1" src="https://github.com/user-attachments/assets/31a8c91c-52a0-4fb8-ac6c-22771721a5e5" />
 
-
-
-
-Copy it to hosts where you can already log in.
 ```
 ssh-copy-id localhost
 ```
+ <br>
 <img width="1573" height="332" alt="5" src="https://github.com/user-attachments/assets/a3f51870-a272-4db4-830b-5c6462a17b6c" />
 
 
 
 
-Your public key is used automatically
+Testasin kirjautumista SSH. Nyt pystyin kirjautumaan ilman salasanan.
 
 ```
 ssh localhost
 ```
+ <br>
 <img width="1403" height="209" alt="6" src="https://github.com/user-attachments/assets/819754ab-caa9-4e36-be31-d392b372d719" />
 
 
 
-Troubleshooting
+### Troubleshooting
 ```
 sudo systemctl status ssh
 ```
@@ -87,49 +84,47 @@ exit
 
 
 ## d) Hei Ansible. Tee hei maailma ansiblella ja kokeile sitä SSH:n yli. (localhost)
-Here I had to install Ansible and print Hello world. Get updatess and the install Ansible. 
+
+Päivitin järjestelmän ja asensin Ansiblen sekä muut tarvittavat ohjelmat.
 
 ```
 sudo apt-get update
 sudo apt-get install ansible micro bash-completion tree
 ```
-<img width="536" height="35" alt="c1" src="https://github.com/user-attachments/assets/57959cb3-7969-4d11-80ed-10da1102d62d" />
+
+<img width="536" height="35" alt="c1" src="https://github.com/user-attachments/assets/3824fb65-1f04-49cb-a1e5-e131f4171b44" />
 
 
-
-Let's make a folder for our Ansible configuration.
+Loin  hakemiston ja siirryin siihen, sekä loin hosts.ini tiedoston micro editorilla. Komento cat näyttää tiedoston sisällön.
 ```
 cd
 mkdir ansible/
 cd ansible/
 ```
-Let's write a list of hosts we'll be controlling. Create "hosts.ini", and add "localhost" there.
-<img width="316" height="86" alt="c2" src="https://github.com/user-attachments/assets/cd5fb638-ab70-4ed1-afe7-3075465491b9" />
 
+<img width="316" height="86" alt="c2" src="https://github.com/user-attachments/assets/d59eb2ca-a3b5-4567-89f8-0874151a08b9" />
 ```
 micro hosts.ini
 cat hosts.ini
 
 localhost
 ```
-<img width="583" height="62" alt="c3" src="https://github.com/user-attachments/assets/41ee1792-c897-4020-a577-95cd6185797e" />
 
-To save file ctrl + s and to exit ctrl + q.
+Tiedostossa määritellään käytettävä kone (localhost). Määritellään Pythonin sijainti. Pakko. Tämän asetus, autta Ansible ilmoitta Python versioon liittyvästä ongelmasta. Tallensin tiedoston  Ctrl + S ja poistuin Ctrl + Q.
 
-Sitten 
-Unohdin otta kuvakaaupauksi jostan procesista, but I had run into problem where I needed to Let's tell it to use the obvious Python command. We can add variables to host groups in inventory. This one we'll add to all and then 
 ```
-micro hosts.ini
-cat hosts.ini
-
 localhost
 
 [all:vars]
 ansible_python_interpreter=/usr/bin/python3
 ```
-<img width="1264" height="140" alt="c10" src="https://github.com/user-attachments/assets/427cbcc1-b577-49da-955b-535b2d5106b1" />
-<img width="822" height="165" alt="с6" src="https://github.com/user-attachments/assets/71238b32-f3a4-467d-b745-06eb2b2e9904" />
 
+
+<img width="583" height="62" alt="c3" src="https://github.com/user-attachments/assets/e804001b-8628-4d9c-8481-315a75049aea" />
+<img width="822" height="165" alt="с6" src="https://github.com/user-attachments/assets/5bc47c82-e38d-422b-9d59-3ceab7312458" />
+
+
+Loin Ansible asetustiedoston. Tämä kommunikoi Ansiblelle, että koneiden tiedot löytyvät hosts.ini sta.
 ```
 micro ansible.cfg
 cat ansible.cfg
@@ -137,22 +132,52 @@ cat ansible.cfg
 [defaults]
 inventory = hosts.ini
 ```
-<img width="847" height="132" alt="с7" src="https://github.com/user-attachments/assets/f79910ea-b2aa-492e-82fc-bd6fcc1ea942" />
+<img width="847" height="132" alt="с7" src="https://github.com/user-attachments/assets/4956ef1c-258c-45b9-8767-02238e05c10d" />
 
+
+
+### Hello World
+
+Loin roolille oman hakemistorakenteen ja tiedoston main.yml.
 ```
-micro main
+mkdir -p roles/hello/tasks
 ```
+```
+micro roles/hello/tasks/main.yml
+
+- name: Create Hello World file
+  copy:
+    dest: /tmp/hello-ansible
+    content: "Hello Ansible world!\n"
+```
+
+Tämä siis luo tiedoston /tmp/hello-ansible ja kirjoittaa siihen tekstin Hello Ansible world!
+
+
+
+Sitten loin playbook tiedoston, joka käynnistää Hello World.
+```
+micro site.yml
+
+- hosts: all
+  roles:
+    - hello
+```
+
+Se sitten määrittää, että Ansible suorittaa hello "roolin" kaikilla hosts.ini tiedostossa määritellyillä koneilla.
+
+<img width="1099" height="271" alt="c11" src="https://github.com/user-attachments/assets/624fc326-f0e5-4e91-a538-65dc2683add5" />
+
+
+
+
+
+
 ```
 ssh localhost 'cat /tmp/hello-ansible'
 ```
 
 
-<img width="1099" height="271" alt="c11" src="https://github.com/user-attachments/assets/918b263e-0fee-4fdd-bdc1-a15296af7569" />
-<img width="711" height="115" alt="c12" src="https://github.com/user-attachments/assets/8075a8a4-81d0-4170-a932-f3d254a336ac" />
-<img width="1189" height="194" alt="c13" src="https://github.com/user-attachments/assets/5d368f47-b714-420f-94d2-69df6cc0978b" />
-<img width="703" height="35" alt="c14" src="https://github.com/user-attachments/assets/4231a328-6651-4364-bca7-0eca33635564" />
-
-<img width="749" height="339" alt="clast" src="https://github.com/user-attachments/assets/fae2837b-2ceb-44ea-884c-1bdafdfd007c" />
 
 
 
