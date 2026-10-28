@@ -8,7 +8,7 @@
 **Aloitusaika**: 23:30  
 **Lopetusaika**: 00:00 
 **28.10.2026**  
-**Aloitusaika**: 00:00 
+**Aloitusaika**: 09:40 
 **Lopetusaika**: 16:20  
 
 ## x) Tiivistelmät Raportin kirjoittaminen
@@ -16,16 +16,15 @@ Lue ja tiivistä. (Tässä x-alakohdassa ei tarvitse tehdä testejä tietokoneel
 Karvinen 2026: SSH public key - Login without password
 Karvinen 2026: Hello Ansible
 
-a) Asenna Debian 13 paikallisesti virtuaalikoneeseen. ja b) Sshecrets. Asenna SSH-demoni käsin ja testaa se kirjautumalla SSH:lla. (localhost)
+a) Asenna Debian 13 paikallisesti virtuaalikoneeseen. ja b) Sshecrets. Asenna SSH-demoni käsin ja testaa se kirjautumalla SSH:lla. (localhost) ja c) Pubkey. Automatisoi ssh-kirjautuminen julkisella avaimella. (localhost kelpaa)
 
 - VirtualBoxia oli jo asenettu tietokonella. Asensin vain uusi Debain VM.
 - Base Memory: 4090 MB, Number of CPUs: 2, Disk Size: 60 GB. Käytäsin [minun vanhat]([https://pages.github.com/](https://github.com/klaudistefi/linux-course/blob/main/h1_oma_Linux_raportti.md) asennus ohjeet sekä [kurssin aikana anettut](https://github.com/punnalathomas/linux-course/blob/main/h1-installing-linux.md) anettut ohjeet. Asennus meni nätisit. paitsi käynistyksen aikana tuli errot. VM ei halunut käynistya tuli ABORTED viesti. mutta tietokonen uudeleen käynistamiseen jälkeen se avautunut. 
 
-- updated the system
 ```
 sudo apt-get update
 ```
-Siteen 
+
 ```
 sudo apt-get -y install ssh
 ```
@@ -47,13 +46,44 @@ ssh-copy-id localhost
 ```
 ssh localhost
 ```
+Troubleshooting
+```
+sudo systemctl status ssh
+```
 
+```
+ssh klaudi@localhost
+```
 
-c) Pubkey. Automatisoi ssh-kirjautuminen julkisella avaimella. (localhost kelpaa)
-
+```
+exit
+```
 d) Hei Ansible. Tee hei maailma ansiblella ja kokeile sitä SSH:n yli. (localhost kelpaa)
+```
+sudo apt-get update
+sudo apt-get install ansible micro bash-completion tree
+```
+Let's make a folder for our Ansible configuration.
 
-e) Vapaaehtoinen bonus: kokeile Ansiblella jokin näista asetuksista: paketin asennus, asetustiedosto /etc/ alle, käynnistä jokin demoni, tee uusi käyttäjä. Tarvitset todennäköisesti sudoa, become: true.
+
+```
+cd
+mkdir ansible/
+cd ansible/
+```
+Let's write a list of hosts we'll be controlling. Create "hosts.ini", and add "localhost" there.
+
+
+```
+micro hosts.ini
+cat hosts.ini
+
+localhost
+```
+ctrl + s
+ctrl + q
+
+Sitten 
 
 
 ## Lähteet: 
