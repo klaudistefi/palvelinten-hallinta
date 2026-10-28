@@ -103,6 +103,7 @@ cd ansible/
 ```
 
 <img width="316" height="86" alt="c2" src="https://github.com/user-attachments/assets/d59eb2ca-a3b5-4567-89f8-0874151a08b9" />
+
 ```
 micro hosts.ini
 cat hosts.ini
