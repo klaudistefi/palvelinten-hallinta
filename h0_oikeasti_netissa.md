@@ -95,9 +95,9 @@ Avasin selaimessa localhost. Oma sivuni näkyi, joten mahtavaa.
 sudo micro /var/www/html/index.html
 http://localhost
 ```
+<img width="544" height="335" alt="image" src="https://github.com/user-attachments/assets/b622f9fe-b7b8-4f90-a91d-e7a9650c39af" />
+<img width="543" height="60" alt="image" src="https://github.com/user-attachments/assets/a52783b9-610b-4f15-9898-d03ded1c7d7e" />
 
-KUVA
-KUVA
 
 
 # Lähteet: 
