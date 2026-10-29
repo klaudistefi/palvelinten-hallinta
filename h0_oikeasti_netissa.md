@@ -20,18 +20,20 @@
 
 
 
+## a) Paikallista. Asenna Debian 13 paikallisesti virtuaalikoneeseen.
+Asensin Debian 13 VirtualBoxiini. Asennusvaiheet löytyy tehtävän H1 yhteydessä. Löytyy täältä: https://github.com/klaudistefi/palvelinten-hallinta/blob/main/h1_hei_ansiblen_maailma.md 
 
+
+## f) Tehdä alkutoimet ja asentaa weppipalvelimen paikalliseen virtuaalikoneeseen.
 
 
 # Lähteet: 
-Heinonen, Johanna 2025. How to Install Linux to Virtualbox? Luettavissa: https://github.com/johannaheinonen/johanna-test-repo/blob/main/linux-20082025.md#1-virtualbox-installation
-
 Tero Karvinen – Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa)
 
 Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ 
 
-Downloading Debian. https://www.debian.org/download
+H1 Hei Ansiblen maailma. Luettavissa:
+[Downloading Debian. https://www.debian.org/download](https://github.com/klaudistefi/palvelinten-hallinta/blob/main/h1_hei_ansiblen_maailma.md )
 
-SSH public key - Login without password. Luettavissa: [https://terokarvinen.com/2020/command-line-basics-revisited/?fromSearch=command%20line%20basics%20revisited ](https://terokarvinen.com/ssh-public-key-login-without-password/)
-
-Hello Ansible. Luettavissa: [https://terokarvinen.com/hello-ansible/ ](https://terokarvinen.com/hello-ansible/)
+h3 Hello Web Server. Luettavissa:
+https://github.com/klaudistefi/linux-course/blob/main/h3_hello_web_server.md
