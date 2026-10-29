@@ -4,7 +4,7 @@
 **Käyttöjärjestelmä:** Pöytätietokone, Windows 11 -kone <br>
 **Virtuaalikone:** Oracle Virtual Bpx Debian
 
-# H1 h0 Oikeasti netissä
+# h0 Oikeasti netissä
 **29.10.2026**  <br>
 
 
