@@ -9,7 +9,6 @@
 
 
 ## x) Tiivistelmät 
-<br>
 
 ### Niemi 2025: H4 Tehtävät
 - Kuvakaappaukset oli esitetty hyvin
@@ -23,15 +22,15 @@
 <br>
 
 ## a) Paikallista. Asenna Debian 13 paikallisesti virtuaalikoneeseen.
-<br>
+
 Asensin Debian 13 VirtualBoxiini. Asennusvaiheet löytyy tehtävän H1 yhteydessä. Löytyy täältä: https://github.com/klaudistefi/palvelinten-hallinta/blob/main/h1_hei_ansiblen_maailma.md 
 
 <br>
 
 ## f) Tehdä alkutoimet ja asentaa weppipalvelimen paikalliseen virtuaalikoneeseen.
-<br>
 
 Olen edellisellä Linux kurssilla vuokrannut palvelimen enkä välttämättä halunnut vuokrata uutta VPS palvelinta. Sen takia päätin tehdä alkutoimet ja asentaa web-palvelimen paikalliseen virtuaalikoneeseen. 
+<br>
 
 ### Virtuaalikoneen tarkistaminen
 Avasin VirtualBoxin ja käynnistin Debian VM terminaalin. Tarkistin käyttäjänimen, koneen nimen ja Linuxin version komennoilla whoami, hostname ja cat /etc/os-release. 
@@ -44,8 +43,8 @@ hostname
 cat /etc/os-release
 sudo whoami
 ```
-<img width="944" height="537" alt="image" src="https://github.com/user-attachments/assets/0fa8843b-3e84-42d5-ad44-c2eb641c079d" />
-<img width="944" height="128" alt="image" src="https://github.com/user-attachments/assets/3c32b0f9-80ae-4087-b16a-abd3573b9495" />
+<img width="544" height="337" alt="image" src="https://github.com/user-attachments/assets/0fa8843b-3e84-42d5-ad44-c2eb641c079d" />
+<img width="544" height="64" alt="image" src="https://github.com/user-attachments/assets/3c32b0f9-80ae-4087-b16a-abd3573b9495" />
 
 ### Palomuurin asetukset
 
@@ -58,8 +57,8 @@ sudo ufw enable
 sudo ufw status
 ```
 
-<img width="923" height="660" alt="image" src="https://github.com/user-attachments/assets/683b3e4e-83f8-4764-84e1-e7049d4f327e" />
-<img width="846" height="454" alt="image" src="https://github.com/user-attachments/assets/f5400388-ca74-4248-8a4f-c216c38e995e" />
+<img width="523" height="360" alt="image" src="https://github.com/user-attachments/assets/683b3e4e-83f8-4764-84e1-e7049d4f327e" />
+<img width="446" height="254" alt="image" src="https://github.com/user-attachments/assets/f5400388-ca74-4248-8a4f-c216c38e995e" />
 
 ### Järjestelmän päivittäminen
 
@@ -83,8 +82,8 @@ sudo systemctl status apache2
 http://localhost
 ```
 
-<img width="944" height="494" alt="image" src="https://github.com/user-attachments/assets/eb54ffee-f05c-48d4-80f3-683ba0a46ff8" />
-<img width="944" height="500" alt="image" src="https://github.com/user-attachments/assets/4829ecbb-84a8-4cae-8f3b-ed8f7b110f4f" />
+<img width="544" height="394" alt="image" src="https://github.com/user-attachments/assets/eb54ffee-f05c-48d4-80f3-683ba0a46ff8" />
+<img width="544" height="300" alt="image" src="https://github.com/user-attachments/assets/4829ecbb-84a8-4cae-8f3b-ed8f7b110f4f" />
 
 
 ### Oma web-sivu
