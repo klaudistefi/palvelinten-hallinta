@@ -5,19 +5,19 @@
 **Virtuaalikone:** Oracle Virtual Bpx Debian
 
 # H1 Hei Ansiblen maailma
-**27.10.2026**  <br>
-**28.10.2026**  <br>
+**29.10.2026**  <br>
 
-# x) Tiivistelmät 
-Karvinen 2026: SSH public key - Login without password
-- Helppo tapa kirjautua ilman salasanan kirjoittamista joka kerta
-- Päivitetään Linux ja luodaan julkinen avain
-- Testataan komennot ja kirjautuminen
 
-Karvinen 2026: Hello Ansible
-- tutustutaan tarkemmin siihen, miten Ansible toimii
-- Ansible on työkalu, sillä voidaan hallita ja määrittää tietokoneita
-- Ansible ei ole helpoin työkalu aloittelijalle (minulle), mutta sen käyttöä voi oppia 
+## x) Tiivistelmät 
+### Niemi 2025: H4 Tehtävät
+- Kuvakaappaukset oli esitetty hyvin
+- Vaiheet oli selitetty selkeästi.
+- Virtuaalipalvelimen alkutoimet oli avattu ja selitetty todella hyvin.
+
+### Partanen 2025: Harjoitus 5: Nimekäs: a) Nimi (Vain a-kohta.)
+- Alidomainit oli luotu.
+- Kaikki toimi niin kuin piti, mutta olisi kuitenkin kiva, jos vaiheissa olisi näytetty tai kerrottu tarkemmin, mitä painikkeita tai valintoja käytettiin.
+
 
 
 
