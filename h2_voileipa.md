@@ -1,4 +1,4 @@
-<img width="940" height="863" alt="image" src="https://github.com/user-attachments/assets/3e6710f4-e732-4df3-b809-106159be8cdb" />**Kurssi:** Palvelinten Hallinta ICI001AS3A-3017<br>
+**Kurssi:** Palvelinten Hallinta ICI001AS3A-3017<br>
 **Tekijä:** Klaudija Majamäki <br>
 **Käyttöjärjestelmä:** Pöytätietokone, Windows 11 -kone <br>
 **Virtuaalikone:** Oracle Virtual Bpx Debian
