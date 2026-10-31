@@ -1,4 +1,4 @@
-**Kurssi:** Palvelinten Hallinta ICI001AS3A-3017<br>
+<img width="940" height="863" alt="image" src="https://github.com/user-attachments/assets/3e6710f4-e732-4df3-b809-106159be8cdb" />**Kurssi:** Palvelinten Hallinta ICI001AS3A-3017<br>
 **Tekijä:** Klaudija Majamäki <br>
 **Käyttöjärjestelmä:** Pöytätietokone, Windows 11 -kone <br>
 **Virtuaalikone:** Oracle Virtual Bpx Debian
@@ -278,6 +278,56 @@ ls -l /tmp/now.txt
 r - lukuoikeutta (read).
 w - kirjoitusoikeutta (write).
 -, ettei kyseistä oikeutta ole. 
+
+
+## e) Jotain muuta - Apache
+Valitsin service moduulin, jonka avulla voidaan hallita Linuxin järjestelmäpalveluita. Sillä voi käynnistää, pysäyttää ja käynnistää palveluita uudelleen.
+Loin uuden roolin mkdir -p roles/service/tasks. Sitten micro roles/service/tasks/main.yml. Sinne:
+```
+- name: Start Apache service
+  service:
+    name: apache2
+    state: started
+    enabled: yes
+```
+
+Tarkoitus käynnistää Apache palvelu ja määrittää se käynnistymään automaattisesti tietokoneen käynnistyessä.
+
+```
+mkdir -p roles/service/tasks
+micro roles/service/tasks/main.yml
+```
+
+<img width="444" height="164" alt="image" src="https://github.com/user-attachments/assets/27a9299f-b222-47a5-ab05-e929a80942b3" />
+<img width="444" height="189" alt="image" src="https://github.com/user-attachments/assets/fb8f739f-7c32-4a0c-a287-d6cbadd6ed4f" />
+
+Lisäsin roolin micro site.yml
+```
+
+- hosts: all
+  become: true
+  roles:
+    - world
+    - antero
+    - packages
+    - service
+```
+```
+micro site.yml
+```
+
+<img width="470" height="70" alt="image" src="https://github.com/user-attachments/assets/4affddf7-7316-4b2c-a74d-0d2ff65d9718" />
+<img width="444" height="226" alt="image" src="https://github.com/user-attachments/assets/73758fc2-d250-410e-8caa-d579febde96b" />
+
+### Testi 
+```
+ansible-playbook site.yml -K
+systemctl status apache2
+```
+
+<img width="444" height="467" alt="image" src="https://github.com/user-attachments/assets/06f3ffdc-901e-465e-a973-7607c14d7090" />
+<img width="444" height="302" alt="image" src="https://github.com/user-attachments/assets/66854eec-6583-430d-a86f-850416796333" />
+
 
 
 # Lähteet: 
