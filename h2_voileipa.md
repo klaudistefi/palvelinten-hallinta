@@ -26,7 +26,7 @@ sudo groupadd sodoless
 sudo adduser ansibleuser sodoless
 ```
 
-<img width="694" height="759" alt="image" src="https://github.com/user-attachments/assets/0c7faf93-b3b7-4650-bdb4-aee17b7de052" />
+<img width="394" height="359" alt="image" src="https://github.com/user-attachments/assets/0c7faf93-b3b7-4650-bdb4-aee17b7de052" />
 
 
 
@@ -36,7 +36,7 @@ Avasin uusi terminaali ikunaan muodosta tarvittaessa SSH-yhteys kohdekoneeseen.
 sudo -i
 exit
 ```
-<img width="521" height="520" alt="image" src="https://github.com/user-attachments/assets/1d960d5c-cfd4-49dd-a69d-6e97ada4415f" />
+<img width="221" height="220" alt="image" src="https://github.com/user-attachments/assets/1d960d5c-cfd4-49dd-a69d-6e97ada4415f" />
 
 ### Sudo oikeuksien määrittäminen
 
@@ -47,8 +47,8 @@ sudo visudo /etc/sudoers.d/sodoless
 %sudoless ALL = (ALL) NOPASSWD: ALL
 ```
 
-<img width="876" height="67" alt="image" src="https://github.com/user-attachments/assets/4c274655-ee5c-4fd0-a772-3123d44bba4b" />
-<img width="845" height="275" alt="image" src="https://github.com/user-attachments/assets/bffa0420-f61b-4d74-8ba9-579c26efc971" />
+<img width="476" height="37" alt="image" src="https://github.com/user-attachments/assets/4c274655-ee5c-4fd0-a772-3123d44bba4b" />
+<img width="445" height="175" alt="image" src="https://github.com/user-attachments/assets/bffa0420-f61b-4d74-8ba9-579c26efc971" />
 
 ### Testi
 
@@ -64,7 +64,7 @@ sudo -k
 sudo echo "Testi kaveri"
 ```
 
-<img width="944" height="490" alt="image" src="https://github.com/user-attachments/assets/7cca1eeb-d140-400b-86a9-015586b44e01" />
+<img width="444" height="290" alt="image" src="https://github.com/user-attachments/assets/7cca1eeb-d140-400b-86a9-015586b44e01" />
 
 ### Ongelmat
 
@@ -76,9 +76,9 @@ whoami
 groups
 /etc/sudoers.d/sudoless
 ```
-<img width="854" height="446" alt="image" src="https://github.com/user-attachments/assets/dcde487b-41ce-4bf2-aaba-83c12d10ca88" />
-<img width="932" height="410" alt="image" src="https://github.com/user-attachments/assets/4a9ea471-73fc-45d4-a9f9-a74f6d9dccc1" />
-<img width="944" height="294" alt="image" src="https://github.com/user-attachments/assets/e4fb847d-9284-46d7-8e9b-ff19cc8cde9f" />
+<img width="454" height="246" alt="image" src="https://github.com/user-attachments/assets/dcde487b-41ce-4bf2-aaba-83c12d10ca88" />
+<img width="432" height="210" alt="image" src="https://github.com/user-attachments/assets/4a9ea471-73fc-45d4-a9f9-a74f6d9dccc1" />
+<img width="444" height="194" alt="image" src="https://github.com/user-attachments/assets/e4fb847d-9284-46d7-8e9b-ff19cc8cde9f" />
 
 
 ### Testi 2
@@ -91,7 +91,7 @@ sudo -k
 sudo echo "Kaveri testi"
 ```
 
-<img width="815" height="307" alt="image" src="https://github.com/user-attachments/assets/edd4b483-f7a8-4d07-93b5-bfa1b92f9697" />
+<img width="415" height="157" alt="image" src="https://github.com/user-attachments/assets/edd4b483-f7a8-4d07-93b5-bfa1b92f9697" />
 
 
 
