@@ -93,6 +93,81 @@ sudo echo "Kaveri testi"
 
 <img width="415" height="157" alt="image" src="https://github.com/user-attachments/assets/edd4b483-f7a8-4d07-93b5-bfa1b92f9697" />
 
+## b) Antero
+Tarkoitus oli luoda Ansiblella uusi käyttäjä nimeltä antero. Käyttäjälle piti määrittää SSH kirjautuminen sekä sudo oikeudet ilman salasanan kysymistä.
+
+### Ansible rooli
+Tarkistin, että SSH avain on tässä ls -la ~/.ssh/. Se näyttää .ssh kansion sisällön. Löysin kansiosta aikaisemmin luodun julkisen SSH avaimen, ei tarvinnut luoda uutta. Tarkistin julkisen avaimen sisällön cat ~/.ssh/id_edxxxxx.pub. Se näyttää julkisen SSH-avaimen, jonka kopioin. Siirryin Ansible kansiooncd ansible ja loin uuden roolin kansion mkdir -p roles/antero/tasks. Loin ja avasin tehtävätiedoston micro roles/antero/tasks/main.yml.
+
+```
+ls -la ~/.ssh/
+cat ~/.ssh/id_edxxxxx.pub
+cd ansible
+mkdir -p roles/antero/tasks
+micro roles/antero/tasks/main.yml
+```
+
+### Tehtävien määrittäminen
+Lisäsin main.yml tiedostoon - micro main.yml kansiossa roles/antero/tasks/. Korvasin oma julkinen avain tekstin omalla julkisella SSH avaimela.
+```
+micro main.yml
+
+- group:
+    name: "sodoless"
+    state: present
+- user:
+    name: "antero"
+    state: present
+    groups: ["sodoless", "sudo", "adm"]
+- authorized_key:
+    user: "antero"
+    key: "oma julkinen avain"
+- copy:
+    dest: "/etc/sudoers.d/sodoless"
+    content: "%sodoless ALL = (ALL) NOPASSWD: ALL\n"
+    owner: "root"
+    group: "root"
+    mode: "0644"
+```
+
+<img width="544" height="50" alt="image" src="https://github.com/user-attachments/assets/e36bf22f-eb0a-4af4-8382-d3c7d124a6f2" />
+<img width="543" height="30" alt="image" src="https://github.com/user-attachments/assets/ef793034-28f4-4fcb-86e0-6e271e2f0312" />
+<img width="544" height="291" alt="image" src="https://github.com/user-attachments/assets/9799d2d4-2f53-438e-8982-0e4eea226dc0" />
+<img width="342" height="367" alt="image" src="https://github.com/user-attachments/assets/e256604b-28e4-443c-abba-00974301623e" />
+
+
+### Roolin lisääminen site.yml tiedostoon
+Avasin olemassa olevan site.yml tiedoston ansible kansiossa - micro site.yml. Lisäsin siihen uuden roolin.
+```
+- hosts: all
+  become: true
+  roles:
+    - world
+    - antero
+```
+```
+micro site.yml
+```
+
+<img width="444" height="155" alt="image" src="https://github.com/user-attachments/assets/c943486c-2245-4346-9d66-10b80f8cd153" />
+
+### Playbookin suorittaminen
+Suoritin playbookin - ansible-playbook site.yml. Alukisi Ansible ilmoitti, että sudo salasana puuttuu. Tämä  voi johtua siitä, että tehtävät vaativat pääkäyttäjän oikeudet.
+Ratkaisin ongelman suorittamalla playbookin uudelleen ansible-playbook site.yml --ask-become-password tai eri versio ansible-playbook site.yml -K. S tarkoitta saman asian. Annoin oman admin käyttäjän salasanan. 
+Tarkistin toiminon ssh antero@localhost ja whoami ja sudo woami. Komento palautti root ilman salasanan kysymistä.
+site.ymltiedostossa oli määritelty become: true. Ansible suorittaa tehtävät pääkäyttäjän oikeuksilla. Ilman -K-valintaa Ansible ei saanut tarvittavaa sudo salasanaa.
+```
+ansible-playbook site.yml
+ansible-playbook site.yml --ask-become-password
+ansible-playbook site.yml -K
+ssh antero@localhost
+whoami
+sudo woami
+```
+<img width="444" height="161" alt="image" src="https://github.com/user-attachments/assets/9dc640ce-00cd-4431-bab0-057df740f374" />
+<img width="444" height="362" alt="image" src="https://github.com/user-attachments/assets/ca5193fe-30cc-4912-be99-9c57c841ebf5" />
+<img width="444" height="282" alt="image" src="https://github.com/user-attachments/assets/96234fcd-80f0-4ff1-9cfb-c9a6ea10fc52" />
+
 
 
 # Lähteet: 
@@ -107,3 +182,5 @@ Passwordless Sudo with Ansible. Luettavissa: https://terokarvinen.com/passwordle
 12.3 mkdir: Make directories. Luettavissa: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html 
 
 How to Configure Apache web server on Linux using Ansible. Luettavissa: https://dev.to/paschalogu/how-to-configure-apache-web-server-on-linux-using-ansible-2mcd 
+
+Käytin tekoälyä tekstin kieliopin ja kirjoitusvirheiden tarkistamiseen.
