@@ -221,6 +221,64 @@ htop --version
 <img width="444" height="188" alt="image" src="https://github.com/user-attachments/assets/ff08afca-a847-4c9d-8c0d-968c44fb930f" />
 
 
+## d) File
+Loin orjakoneelle useamman rivin mittainen tekstitiedosto Ansiblella. Määritin omistajan, omistavan ryhmän ja käyttöoikeudet.
+
+Kansiossa ansible loin uuden roolin mkdir -p roles/file/tasks. Avasin uuden tehtävätiedoston micro roles/file/tasks/main.yml. Lisäsin seuraavan tehtävän
+```
+- name: Create file
+  copy:
+    dest: /home/antero/now.txt
+    content: ”Luon file. Yksi/n kaksi”
+    owner: antero
+    group: sodoless
+    mode: "0644"
+```
+
+copy avulla Ansible luo tiedoston ja kirjoittaa siihen määritellyn sisällön. dest - tiedoston sijainti ja nimi. content - tiedoston teksti. owner: antero - käyttäjä antero, siis omistaja. group: sodoless - tiedosto omistava ryhmä sodoless ryhmä. mode: "0644"  -käyttöoikeudet oktaalimuodossa.
+
+```
+mkdir -p roles/file/tasks
+micro roles/file/tasks/main.yml
+```
+
+<img width="323" height="221" alt="image" src="https://github.com/user-attachments/assets/1cb8f589-db48-4229-a7be-2c18e8593cc7" />
+
+### Roolin lisääminen ja suorittaminen
+Kansiossa ansible. Avasin micro site.yml.
+```
+- hosts: all
+  become: true
+  roles:
+    - world
+    - antero
+    - packages
+    - service
+    - file
+```
+Sitten playbook ansible-playbook site.yml -K.
+```
+micro site.yml
+ansible-playbook site.yml -K
+```
+
+<img width="389" height="165" alt="image" src="https://github.com/user-attachments/assets/c468d0f8-93ee-4416-a299-0ab37354beed" />
+<img width="444" height="482" alt="image" src="https://github.com/user-attachments/assets/bf6b1f6a-2baf-4e49-ab8b-f2e965af8490" />
+
+### Testi
+Onko tiedosto on luotu oikean paikaan ja että sen omistaja, ryhmä ja käyttöoikeudet oikein ls -l /tmp/now.txt.
+```
+ls -l /tmp/now.txt
+```
+<img width="444" height="50" alt="image" src="https://github.com/user-attachments/assets/e4812a1c-937d-413b-87fe-2508d60fcc3a" />
+
+### Tarkoitus
+
+-rw-r--r--
+r - lukuoikeutta (read).
+w - kirjoitusoikeutta (write).
+-, ettei kyseistä oikeutta ole. 
+
 
 # Lähteet: 
 Tero Karvinen – Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa)
