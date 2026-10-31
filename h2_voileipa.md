@@ -262,7 +262,7 @@ micro site.yml
 ansible-playbook site.yml -K
 ```
 
-<img width="389" height="165" alt="image" src="https://github.com/user-attachments/assets/c468d0f8-93ee-4416-a299-0ab37354beed" />
+<img width="489" height="165" alt="image" src="https://github.com/user-attachments/assets/c468d0f8-93ee-4416-a299-0ab37354beed" />
 <img width="444" height="482" alt="image" src="https://github.com/user-attachments/assets/bf6b1f6a-2baf-4e49-ab8b-f2e965af8490" />
 
 ### Testi
