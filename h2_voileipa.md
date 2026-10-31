@@ -35,12 +35,13 @@ sudo adduser ansibleuser sodoless
 # Lähteet: 
 Tero Karvinen – Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa)
 
-Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ 
+Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ 
 
-H1 Hei Ansiblen maailma. Luettavissa:
-[Downloading Debian. https://www.debian.org/download](https://github.com/klaudistefi/palvelinten-hallinta/blob/main/h1_hei_ansiblen_maailma.md )
+Sudo without password. Luettavissa: https://terokarvinen.com/passwordless-sudo/ 
 
-h3 Hello Web Server. Luettavissa:
-https://github.com/klaudistefi/linux-course/blob/main/h3_hello_web_server.md
+Passwordless Sudo with Ansible. Luettavissa: https://terokarvinen.com/passwordless-sudo-with-ansible/
 
-Install and Configure Apache. Luettavissa: https://ubuntu.com/tutorials/install-and-configure-apache#1-overview
+12.3 mkdir: Make directories. Luettavissa: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html 
+
+How to Configure Apache web server on Linux using Ansible. Luettavissa: https://dev.to/paschalogu/how-to-configure-apache-web-server-on-linux-using-ansible-2mcd 
+
