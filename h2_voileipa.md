@@ -169,6 +169,58 @@ sudo woami
 <img width="444" height="282" alt="image" src="https://github.com/user-attachments/assets/96234fcd-80f0-4ff1-9cfb-c9a6ea10fc52" />
 
 
+### c) Package - Pakettien asentaminen Ansiblella
+Asensin kaksi ohjelmaa Ansiblella. Asensin curl ja htop. Loin uuden roolin kansiorakenteen mkdir -p roles/packages/tasks. Siirryin tehtäväkansioon ja avasin uuden tiedoston micro roles/packages/tasks/main.yml. Lisäsin sinne.
+```
+- name: Install curl
+  apt:
+    name: curl
+    state: present
+
+- name: Install htop
+  apt:
+    name: htop
+    state: present
+```
+
+apt avulla Ansible voi asentaa ja hallita Debian paketteja.
+```
+mkdir -p roles/packages/tasks
+micro roles/packages/tasks/main.yml
+```
+
+<img width="444" height="129" alt="image" src="https://github.com/user-attachments/assets/40956334-31b1-487f-b06c-2352698db5a6" />
+<img width="444" height="206" alt="image" src="https://github.com/user-attachments/assets/71c98cb1-bc01-4d09-acb8-c2a263ce8727" />
+
+### Roolin lisääminen site.yml-tiedostoon
+Avasin micro site.yml. Lisäsin packages roolin. Niiden kautta Ansible suorittaa myös packages. 
+```
+- hosts: all
+  become: true
+  roles:
+    - world
+    - antero
+    - packages
+```
+```
+micro site.yml
+```
+<img width="429" height="360" alt="image" src="https://github.com/user-attachments/assets/9131ba28-c474-4f2b-97db-45c629514522" />
+<img width="440" height="312" alt="image" src="https://github.com/user-attachments/assets/1cb2951e-e60a-4316-bfa6-ac42154b560b" />
+
+
+### Testi
+Suoritin playbookin ansible-playbook site.yml. Unohdin lisätä loppuun --ask-become-pass-valinnan. Ansible ei saanut tarvittavaa sudo salasanaa. Kaikki oli ok kuin suoritin  ansible-playbook site.yml --ask-become-pass. Viimeinen tarkistus curl –version ja htop –version. Toimi. Molemmat näyttivät ohjelmien versiotiedot.
+```
+ansible-playbook site.yml
+ansible-playbook site.yml --ask-become-pass
+curl –version
+htop --version
+```
+
+<img width="444" height="188" alt="image" src="https://github.com/user-attachments/assets/ff08afca-a847-4c9d-8c0d-968c44fb930f" />
+
+
 
 # Lähteet: 
 Tero Karvinen – Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa)
