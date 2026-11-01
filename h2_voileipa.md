@@ -10,8 +10,8 @@
 
 ## x) Tiivistelmät 
 ### Karvinen 2026: Sudo without password
-- Kirjoitusvirheet voivat aiheuttaa paljon ongelmia. Jos on vaika lukuvaikeuksia, voi joutua kärsimään kuin minä<br>
-- Komento sudo -k tyhjentää aiemmin tallennetun salasanan vakvistus<br>
+- Kirjoitusvirheet voivat aiheuttaa paljon ongelmia. Jos on vaikka lukuvaikeuksia, voi joutua kärsimään kuin minä<br>
+- Komento sudo -k tyhjentää aiemmin tallennetun salasanan vahvistus<br>
 
 ### Munroe 2006: xkcd 149: Sandwitch
 - Hauska sarjakuva, joka selittää yksinkertaisesti miten Linuxin logiikka toimii
@@ -27,10 +27,10 @@
 
 ## a) Sudoless
 
-Tehvävä oli luoda Ansiblea varten uusi käyttäjä, joka voi käyttää sudo-komentoja ilman salasana. Myös SSH kirjautuminen ja sudon käyttö piti saada toimimaan automaattisesti.
+Tehvävä oli luoda Ansiblea varten uusi käyttäjä, joka voi käyttää sudo-komentoja ilman salasanaa. Myös SSH kirjautuminen ja sudon käyttö piti saada toimimaan automaattisesti.
 
 ### Käyttäjän ja ryhmän luominen
-Luon uuden käyttäjän sudo adduser ansibleuser. Loin uuden ryhmän, jonka sodoless sudo adduser ansibleuser. Lisäsin käyttäjän ryhmään sudo adduser ansibleuser sodoless. Ryhmän tarkoituksena on helpottaa käyttöoikeuksien hallintaa. Kun käyttäjä kuuluu ryhmään, hän saa ryhmälle määritellyt oikeudet sudo adduser ansibleuser sodoless.
+Teen uuden käyttäjän sudo adduser ansibleuser. Tein uuden ryhmän, jonka sodoless sudo adduser ansibleuser. Lisäsin käyttäjän ryhmään sudo adduser ansibleuser sodoless. Ryhmän tarkoituksena on helpottaa käyttöoikeuksien hallintaa. Kun käyttäjä kuuluu ryhmään, hän saa ryhmälle määritellyt oikeudet sudo adduser ansibleuser sodoless.
 
 ```
 sudo adduser ansibleuser
@@ -44,7 +44,7 @@ sudo adduser ansibleuser sodoless
 
 
 ### Pikku testi
-Avasin uusi terminaali ikunaan muodosta tarvittaessa SSH-yhteys kohdekoneeseen.
+Avasin uusi terminaali ikkunaan muodosta tarvittaessa SSH-yhteys kohdekoneeseen.
 ```
 sudo -i
 exit
@@ -107,10 +107,10 @@ sudo echo "Kaveri testi"
 <img width="415" height="157" alt="image" src="https://github.com/user-attachments/assets/edd4b483-f7a8-4d07-93b5-bfa1b92f9697" />
 
 ## b) Antero
-Tarkoitus oli luoda Ansiblella uusi käyttäjä nimeltä antero. Käyttäjälle piti määrittää SSH kirjautuminen sekä sudo oikeudet ilman salasanan kysymistä.
+Tarkoitus oli tehdä Ansiblella uusi käyttäjä nimeltä antero. Käyttäjälle piti asettaa SSH kirjautuminen sekä sudo oikeudet ilman salasanan kysymistä.
 
 ### Ansible rooli
-Tarkistin, että SSH avain on tässä ls -la ~/.ssh/. Se näyttää .ssh kansion sisällön. Löysin kansiosta aikaisemmin luodun julkisen SSH avaimen, ei tarvinnut luoda uutta. Tarkistin julkisen avaimen sisällön cat ~/.ssh/id_edxxxxx.pub. Se näyttää julkisen SSH-avaimen, jonka kopioin. Siirryin Ansible kansiooncd ansible ja loin uuden roolin kansion mkdir -p roles/antero/tasks. Loin ja avasin tehtävätiedoston micro roles/antero/tasks/main.yml.
+Tarkistin, että SSH avain on tässä ls -la ~/.ssh/. Se näyttää .ssh kansion sisällön. Löysin kansiosta aikaisemmin tehdyn julkisen SSH avaimen, ei tarvinnut tehdä uutta. Tarkistin julkisen avaimen sisällön cat ~/.ssh/id_edxxxxx.pub. Se näyttää julkisen SSH-avaimen, jonka kopioin. Siirryin Ansible kansiooncd ansible ja loin uuden roolin kansion mkdir -p roles/antero/tasks. Loin ja avasin tehtävätiedoston micro roles/antero/tasks/main.yml.
 
 ```
 ls -la ~/.ssh/
@@ -235,7 +235,7 @@ htop --version
 
 
 ## d) File
-Loin orjakoneelle useamman rivin mittainen tekstitiedosto Ansiblella. Määritin omistajan, omistavan ryhmän ja käyttöoikeudet.
+Loin useamman rivin mittainen tekstitiedosto Ansiblella. Asetin omistajan, omistavan ryhmän ja käyttöoikeudet.
 
 Kansiossa ansible loin uuden roolin mkdir -p roles/file/tasks. Avasin uuden tehtävätiedoston micro roles/file/tasks/main.yml. Lisäsin seuraavan tehtävän
 ```
@@ -279,7 +279,7 @@ ansible-playbook site.yml -K
 <img width="444" height="482" alt="image" src="https://github.com/user-attachments/assets/bf6b1f6a-2baf-4e49-ab8b-f2e965af8490" />
 
 ### Testi
-Onko tiedosto on luotu oikean paikaan ja että sen omistaja, ryhmä ja käyttöoikeudet oikein ls -l /tmp/now.txt.
+Onko tiedosto luotu oikeaan paikaan ja että sen omistaja, ryhmä ja käyttöoikeudet oikein ls -l /tmp/now.txt.
 ```
 ls -l /tmp/now.txt
 ```
