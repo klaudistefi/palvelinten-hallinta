@@ -143,10 +143,10 @@ micro main.yml
     mode: "0644"
 ```
 
-<img width="544" height="50" alt="image" src="https://github.com/user-attachments/assets/e36bf22f-eb0a-4af4-8382-d3c7d124a6f2" />
-<img width="543" height="30" alt="image" src="https://github.com/user-attachments/assets/ef793034-28f4-4fcb-86e0-6e271e2f0312" />
-<img width="544" height="291" alt="image" src="https://github.com/user-attachments/assets/9799d2d4-2f53-438e-8982-0e4eea226dc0" />
-<img width="342" height="367" alt="image" src="https://github.com/user-attachments/assets/e256604b-28e4-443c-abba-00974301623e" />
+<img width="644" height="150" alt="image" src="https://github.com/user-attachments/assets/e36bf22f-eb0a-4af4-8382-d3c7d124a6f2" />
+<img width="643" height="130" alt="image" src="https://github.com/user-attachments/assets/ef793034-28f4-4fcb-86e0-6e271e2f0312" />
+<img width="644" height="391" alt="image" src="https://github.com/user-attachments/assets/9799d2d4-2f53-438e-8982-0e4eea226dc0" />
+<img width="442" height="467" alt="image" src="https://github.com/user-attachments/assets/e256604b-28e4-443c-abba-00974301623e" />
 
 
 ### Roolin lisääminen site.yml tiedostoon
