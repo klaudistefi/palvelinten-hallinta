@@ -60,8 +60,8 @@ sudo visudo /etc/sudoers.d/sodoless
 %sudoless ALL = (ALL) NOPASSWD: ALL
 ```
 
-<img width="576" height="137" alt="image" src="https://github.com/user-attachments/assets/4c274655-ee5c-4fd0-a772-3123d44bba4b" />
-<img width="445" height="175" alt="image" src="https://github.com/user-attachments/assets/bffa0420-f61b-4d74-8ba9-579c26efc971" />
+<img width="476" height="37" alt="image" src="https://github.com/user-attachments/assets/4c274655-ee5c-4fd0-a772-3123d44bba4b" />
+<img width="545" height="200" alt="image" src="https://github.com/user-attachments/assets/bffa0420-f61b-4d74-8ba9-579c26efc971" />
 
 ### Testi
 
