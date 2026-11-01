@@ -4,8 +4,8 @@
 **Virtuaalikone:** Oracle Virtual Bpx Debian
 
 # h2 Voileipä
-**31.10.2026**  <br>
-**1.11.2026**  <br>
+**31.10.2026**  noin 7 tuntia <br>
+**1.11.2026** noin 3 tuntia <br>
 
 
 ## x) Tiivistelmät 
