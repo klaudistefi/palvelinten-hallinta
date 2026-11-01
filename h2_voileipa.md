@@ -179,7 +179,7 @@ sudo woami
 ```
 <img width="544" height="261" alt="image" src="https://github.com/user-attachments/assets/9dc640ce-00cd-4431-bab0-057df740f374" />
 <img width="544" height="462" alt="image" src="https://github.com/user-attachments/assets/ca5193fe-30cc-4912-be99-9c57c841ebf5" />
-<img width="444" height="282" alt="image" src="https://github.com/user-attachments/assets/96234fcd-80f0-4ff1-9cfb-c9a6ea10fc52" />
+<img width="544" height="382" alt="image" src="https://github.com/user-attachments/assets/96234fcd-80f0-4ff1-9cfb-c9a6ea10fc52" />
 
 
 ### c) Package - Pakettien asentaminen Ansiblella
