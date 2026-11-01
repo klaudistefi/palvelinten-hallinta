@@ -5,12 +5,26 @@
 
 # h2 Voileipä
 **31.10.2026**  <br>
+**1.11.2026**  <br>
 
 
 ## x) Tiivistelmät 
+- Karvinen 2026: Sudo without password
+kirjoitus virhet voivat tuoda paljon ongelmia, jos on luki häirio. You will suffer just like I did. <br>
+Komento sudo -k tyhjentää aiemmin tallennetun salasanan vahvistuksen.<br>
+Käyttäjiä voidaan lisätä samaan ryhmään, jolloin oikeudet voidaan määrittää koko ryhmälle.
+
+- Munroe 2006: xkcd 149: Sandwitch
+Hauska sarjakuva mikä helposti selitä ja yksinkertoisesti näyttä miten linux logikka toimi
+
+- Karvinen 2026: Passwordless Sudo with Ansible
+site.yml-tiedostossa määritetään, mitä rooleja Ansible suorittaa
+become: true tarkoittaa, että tehtävät suoritetaan pääkäyttäjän oikeuksilla
+-K-valinnalla Ansible kysyy sudo-salasanan ensimmäisellä suorituskerralla
 
 
-
+- Ansiblen sisäänrakennettu dokumentaatio ansible-doc -kommennolla.
+kaikki kommentit ovat tarkeitä ja autta tämän tehtävän suoritamisessa 
 
 ## a) Sudoless
 
@@ -342,5 +356,7 @@ Passwordless Sudo with Ansible. Luettavissa: https://terokarvinen.com/passwordle
 12.3 mkdir: Make directories. Luettavissa: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html 
 
 How to Configure Apache web server on Linux using Ansible. Luettavissa: https://dev.to/paschalogu/how-to-configure-apache-web-server-on-linux-using-ansible-2mcd 
+
+Sandwich. Luettavissa: https://xkcd.com/149/
 
 Käytin tekoälyä tekstin kieliopin ja kirjoitusvirheiden tarkistamiseen.
