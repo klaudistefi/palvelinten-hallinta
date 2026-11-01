@@ -1,7 +1,7 @@
 **Kurssi:** Palvelinten Hallinta ICI001AS3A-3017<br>
 **Tekijä:** Klaudija Majamäki <br>
 **Käyttöjärjestelmä:** Pöytätietokone, Windows 11 -kone <br>
-**Virtuaalikone:** Oracle Virtual Bpx Debian
+**Virtuaalikone:** Oracle Virtual Box Debian
 
 # h2 Voileipä
 **31.10.2026**  noin 7 tuntia <br>
