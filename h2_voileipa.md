@@ -89,8 +89,8 @@ whoami
 groups
 /etc/sudoers.d/sudoless
 ```
-<img width="454" height="246" alt="image" src="https://github.com/user-attachments/assets/dcde487b-41ce-4bf2-aaba-83c12d10ca88" />
-<img width="432" height="210" alt="image" src="https://github.com/user-attachments/assets/4a9ea471-73fc-45d4-a9f9-a74f6d9dccc1" />
+<img width="554" height="346" alt="image" src="https://github.com/user-attachments/assets/dcde487b-41ce-4bf2-aaba-83c12d10ca88" />
+<img width="532" height="310" alt="image" src="https://github.com/user-attachments/assets/4a9ea471-73fc-45d4-a9f9-a74f6d9dccc1" />
 <img width="444" height="194" alt="image" src="https://github.com/user-attachments/assets/e4fb847d-9284-46d7-8e9b-ff19cc8cde9f" />
 
 
