@@ -9,22 +9,21 @@
 
 
 ## x) Tiivistelmät 
-- Karvinen 2026: Sudo without password
-kirjoitus virhet voivat tuoda paljon ongelmia, jos on luki häirio. You will suffer just like I did. <br>
-Komento sudo -k tyhjentää aiemmin tallennetun salasanan vahvistuksen.<br>
-Käyttäjiä voidaan lisätä samaan ryhmään, jolloin oikeudet voidaan määrittää koko ryhmälle.
+### Karvinen 2026: Sudo without password
+- Kirjoitusvirheet voivat aiheuttaa paljon ongelmia. Jos on vaika lukuvaikeuksia, voi joutua kärsimään kuin minä<br>
+- Komento sudo -k tyhjentää aiemmin tallennetun salasanan vakvistus<br>
 
-- Munroe 2006: xkcd 149: Sandwitch
-Hauska sarjakuva mikä helposti selitä ja yksinkertoisesti näyttä miten linux logikka toimi
+### Munroe 2006: xkcd 149: Sandwitch
+- Hauska sarjakuva, joka selittää yksinkertaisesti miten Linuxin logiikka toimii
 
-- Karvinen 2026: Passwordless Sudo with Ansible
-site.yml-tiedostossa määritetään, mitä rooleja Ansible suorittaa
-become: true tarkoittaa, että tehtävät suoritetaan pääkäyttäjän oikeuksilla
--K-valinnalla Ansible kysyy sudo-salasanan ensimmäisellä suorituskerralla
+### Karvinen 2026: Passwordless Sudo with Ansible
+- site.yml-tiedostossa määritetään, mitä rooleja Ansible suorittaa
+- become: true tarkoittaa, että tehtävät suoritetaan pääkäyttäjän oikeuksilla
+- -K-valinnalla Ansible kysyy sudo-salasanan ensimmäisellä suorituskerralla
 
-
-- Ansiblen sisäänrakennettu dokumentaatio ansible-doc -kommennolla.
-kaikki kommentit ovat tarkeitä ja autta tämän tehtävän suoritamisessa 
+### Ansiblen sisäänrakennettu dokumentaatio ansible-doc -kommennolla.
+- monet kommentit ja ohjeet ovat tärkeitä ja auttavat tehtävän suorittamisessa
+- dokumentaatiossa on selityksiä eri komennoista
 
 ## a) Sudoless
 
