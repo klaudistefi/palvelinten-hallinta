@@ -7,18 +7,33 @@
 **5.11.2026**  <br>
 
 ## x) Tiivistelmät 
+
 ### Karvinen 2026: Apache installed with Ansible - quick notes
 
+- Käytetään kolme vaihetta, apachen asenuksessa. Asennus, asetustiedostojen lisääminen ja käynnistäminen.
+- Muutokset astuvat voimaan vasta, kun demoni on käynnistetty uudelleen
+- apt asentaa ohjelman
+
+ 
 ### Ansible Community Documentation: Handlers: running operations on change
 Handlers: running operations on change (johdantokappale pääotsikon alta)
+
+- SE suorittaa tehtävän vain kun jokin toinen tehtävä ilmoittaa muutoksesta
+
 Notifying handlers
+
+- notify, se tehtävä ilmoittaa handlerille, että sen pitää suorittaa oma tehtävä.
 
 ### 'ansible-doc service':
 johdantokappale (MODULE alta)
-enabled
-name
-state
-EXAMPLES
+
+- enabled
+
+- name
+
+- state
+
+- EXAMPLES
 
 
 
