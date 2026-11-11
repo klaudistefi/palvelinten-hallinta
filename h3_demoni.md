@@ -25,13 +25,12 @@ Notifying handlers
 - notify, se tehtävä ilmoittaa handlerille, että sen pitää suorittaa oma tehtävä.
 
 ### 'ansible-doc service':
-johdantokappale (MODULE alta)
 
-- enabled
+- enabled, tuleko päälle automaattisesti, kun tietokone käynnistetään
 
-- name
+- name, se mitä palvelu hallitan, sen nimen
 
-- state
+- state, palvelun tila, started, stopped, restarted
 
 - EXAMPLES
 
