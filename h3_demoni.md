@@ -4,7 +4,8 @@
 **Virtuaalikone:** Oracle Virtual Box Debian
 
 # H3 Demoni
-**5.11.2026**  <br>
+**09.11.2026**  <br>
+**10.11.2026**  <br>
 
 ## x) Tiivistelmät 
 
