@@ -33,9 +33,13 @@ Notifying handlers
 
 - state, palvelun tila, started, stopped, restarted
 
-- EXAMPLES
-
-
+- EXAMPLES,
+```
+- name: Restart Apache
+  ansible.builtin.service:
+    name: apache2
+    state: restarted
+```
 
 
 ## a) Apassi. 
@@ -182,3 +186,5 @@ h2 Voileipä. Klaudija Majamäki. Luettavissa: https://github.com/klaudistefi/pa
 Installing NGINX Open Source Luettavissa: https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source 
 
 Galaxy Developer Guide.  Luettavissa: https://docs.ansible.com/projects/ansible/latest/galaxy/dev_guide.html 
+
+ansible.builtin.service module – Manage services. Luettavissa: https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/service_module.html
