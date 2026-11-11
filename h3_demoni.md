@@ -37,6 +37,8 @@ Sivu toimi oikein. Pystyin muokkaamaan sitä ilman sudo oikeuksia.
 
 <img width="944" height="759" alt="image" src="https://github.com/user-attachments/assets/7f04711c-0bfc-4cd7-95c6-4f04e59143bf" />
 <img width="944" height="314" alt="image" src="https://github.com/user-attachments/assets/5dcec716-d26d-43f8-82da-a9233f7a5f6b" />
+
+
 ```
 curl localhost
 ls -l /var/www/html/
@@ -84,10 +86,12 @@ Komento antaa Nginx valmiin hakemisto rakenteen ja tarvittavat tiedostot. Tein N
 <img width="944" height="647" alt="image" src="https://github.com/user-attachments/assets/c8978589-c4a2-4e66-b926-a9b955a3ed4d" />
 
 Avasin tiedoston micro site.yml ja lisäsin nginx listaan. 
+
 <img width="944" height="275" alt="image" src="https://github.com/user-attachments/assets/904c3d20-df60-40e8-9ba4-d5a1626b1e73" />
 
 
 Lisäsin Nginxin tehtävät tiedostoon micro roles/nginx/tasks/main.yml.
+
 <img width="940" height="243" alt="image" src="https://github.com/user-attachments/assets/fa073db0-bf60-474b-bf4b-0c739e8221b5" />
 
 ### Testi
@@ -101,10 +105,10 @@ Testasin komennolla ansible-playbook site.yml. Oli kirjoitusvirheitä ja puuttuv
 Myös huomasin, että Ansible yritta suorittaa Apache ennen Nginx. Muutin roolien järjestystä site.yml tiedostossa. Tuli vielä virhe, joka liittyi vanhaan service rooliin. En saanut sitä korjattua, joten poistin kyseisen roolin site.yml tiedostosta.
 
 Toimi.
+
 <img width="435" height="504" alt="image" src="https://github.com/user-attachments/assets/2e848252-d632-4853-9992-79ba2199ec75" />
 <img width="944" height="214" alt="image" src="https://github.com/user-attachments/assets/a40b5f62-6b18-46f3-9e0c-6048fac91a11" />
 <img width="944" height="528" alt="image" src="https://github.com/user-attachments/assets/c78c7fc6-a4ab-45e8-a550-a5ad59cccf9b" />
-
 
 
 ```
@@ -132,12 +136,17 @@ Ansible galaxy komento oli jo luonut tarvittavan hakemistot. Muokkasin main.yml-
 <img width="404" height="217" alt="image" src="https://github.com/user-attachments/assets/b2f1d3ed-2363-4531-93c0-698cd8b5fae8" />
 
 main.yml kansiossa task.
+
 <img width="796" height="638" alt="image" src="https://github.com/user-attachments/assets/0d5681d5-bd00-4f7c-b7eb-2b7e4ea8d248" />
 
 example.com.conf
+
 <img width="842" height="359" alt="image" src="https://github.com/user-attachments/assets/0d9e88f7-db68-4668-9643-c4555ebc344f" />
 
-Testasin uudelleen ansible-playbook site.yml -K ja curl localhost. Toimi.
+Testasin uudelleen ansible-playbook site.yml -K ja curl localhost.
+
+Toimi.
+
 <img width="944" height="39" alt="image" src="https://github.com/user-attachments/assets/02d3ba0f-def8-4d1b-864b-4756e4a9f0aa" />
 <img width="944" height="286" alt="image" src="https://github.com/user-attachments/assets/c88a6f08-09cc-4c1c-926b-4f63b737eabe" />
 
