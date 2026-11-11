@@ -41,7 +41,7 @@ Notifying handlers
 ## a) Apassi. 
 Tehtävä: Asenna Apache 2 käsin. Weppisivun tulee näkyä palvelimen etusivulla. Sivun tulee olla tavallisen käyttäjän muokattavissa, ilman root- tai sudo-oikeuksia.
 
-Olin asentanut Apache2 virtuaalikoneelle jo edellisessä tehtävässä. Apache näytti jo omaa tekemääni testisivua, joten uutta sivua ei tarvinnut luoda. [Linkki tässä.](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa) Tarkistin missä sivu sijaitsee ja mitkä ovat sen käyttöoikeudet ls -l /var/www/html/.
+Olin asentanut Apache2 virtuaalikoneelle jo edellisessä tehtävässä. Apache näytti jo omaa tekemääni testisivua, joten uutta sivua ei tarvinnut luoda. [Linkki tässä.](https://github.com/klaudistefi/palvelinten-hallinta/blob/main/h2_voileipa.md) Tarkistin missä sivu sijaitsee ja mitkä ovat sen käyttöoikeudet ls -l /var/www/html/.
 
 <img width="944" height="102" alt="image" src="https://github.com/user-attachments/assets/337bcad2-b4fc-45af-bb1a-b693da4d62df" />
 
