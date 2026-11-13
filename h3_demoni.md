@@ -173,18 +173,18 @@ Toimi.
 
 
 # Lähteet: 
-Tero Karvinen – Palvelinten Hallinta. Luettavissa: https://terokarvinen.com/linux-palvelimet/
+Tero Karvinen – Palvelinten Hallinta. Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu: 25.10.2026
 
-Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/
+Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 25.10.2026
 
-Apache installed with Ansible - quick notes. Luettavissa: https://terokarvinen.com/apache-ansible/
+Apache installed with Ansible - quick notes. Luettavissa: https://terokarvinen.com/apache-ansible/ Luettu: 9.11.2026
 
-Handlers: running operations on change. Luettavissa: https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
+Handlers: running operations on change. Luettavissa: https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html Luettu: 9.11.2026
 
-h2 Voileipä. Klaudija Majamäki. Luettavissa: https://github.com/klaudistefi/palvelinten-hallinta/blob/main/h2_voileipa.md 
+h2 Voileipä. Klaudija Majamäki. Luettavissa: https://github.com/klaudistefi/palvelinten-hallinta/blob/main/h2_voileipa.md Luettu: 9.11.2026
 
-Installing NGINX Open Source Luettavissa: https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source 
+Installing NGINX Open Source Luettavissa: https://docs.nginx.com/nginx/admin-guide/installing-nginx/installing-nginx-open-source Luettu: 10.11.2026
 
-Galaxy Developer Guide.  Luettavissa: https://docs.ansible.com/projects/ansible/latest/galaxy/dev_guide.html 
+Galaxy Developer Guide.  Luettavissa: https://docs.ansible.com/projects/ansible/latest/galaxy/dev_guide.html Luettu: 10.11.2026
 
-ansible.builtin.service module – Manage services. Luettavissa: https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/service_module.html
+ansible.builtin.service module – Manage services. Luettavissa: https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/service_module.html Luettu: 10.11.2026
