@@ -15,9 +15,9 @@
 
 ### Karvinen 2023: Configuration Management of Distributed Systems over Unreliable and Hostile Networks (pdf, ̣mirrors: local, archive.org), vain nämä kohdat:
 
-4.12.1 Size and Complexity of Some DSLs (112. Ominaisuuksien määrä.)
-4.12.2 Use of DSL Functions in Case Configuration (112-115. Mitä oikeasti käytetään.)
-4.12.3.1 Dependencies Between Main Functions (115-117. Tärkeimmät rakennuspalikat.)
+4.12.1 Size and Complexity of Some DSLs (112. Ominaisuuksien määrä.) <br>
+4.12.2 Use of DSL Functions in Case Configuration (112-115. Mitä oikeasti käytetään.) <br>
+4.12.3.1 Dependencies Between Main Functions (115-117. Tärkeimmät rakennuspalikat.) <br>
 
  # a) Räpylä.
 
