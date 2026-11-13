@@ -6,8 +6,8 @@
 
 
 # h4 Pizza Fantasia
-**12.11.2026** <br>
-**13.11.2026**
+**15.11.2026** <br>
+**1.11.2026**
 
 
 
@@ -77,8 +77,8 @@ Tehtävä: Osoita, että tilasi on idempotentti.
 
 
 # Lähteet:
-Tero Karvinen – Palvelinten Hallinta. Luettavissa: https://terokarvinen.com/linux-palvelimet/ <br>
-Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ <br>
-Apache installed with Ansible - quick notes. Luettavissa: https://terokarvinen.com/apache-ansible/ <br>
-Handlers: running operations on change. Luettavissa: https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html <br>
-Configuration Management of Distributed Systems over Unreliable and Hostile Networks. Luettavissa: https://westminsterresearch.westminster.ac.uk/item/w7vvz/configuration-management-of-distributed-systems-over-unreliable-and-hostile-networks  <br>
+Tero Karvinen - Palvelinten Hallinta. Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu: 25.10.2026
+
+Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 25.10.2026
+
+Configuration Management of Distributed Systems over Unreliable and Hostile Networks. Luettavissa: https://westminsterresearch.westminster.ac.uk/item/w7vvz/configuration-management-of-distributed-systems-over-unreliable-and-hostile-networks Luettu: 15.11.2026
