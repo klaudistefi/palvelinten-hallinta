@@ -21,14 +21,14 @@
 
  # a) Räpylä.
 
-Tehtävä: Asenna itse valitsemasi demoni käsin. Jokin muu kuin tunnilla tai kotitehtävissä aiemmin asennettu, eli ei apache, ngninx eikä openssh-server. Kuten aina, testaa lopputulos.
+**Tehtävä:** Asenna itse valitsemasi demoni käsin. Jokin muu kuin tunnilla tai kotitehtävissä aiemmin asennettu, eli ei apache, ngninx eikä openssh-server. Kuten aina, testaa lopputulos.
 
 ```
 
 ```
  # b) Automaatti.
 
-Tehtävä: Automatisoi valitsemasi demonin asennus Ansiblella.
+**Tehtävä:** Automatisoi valitsemasi demonin asennus Ansiblella.
 
 
 
@@ -40,7 +40,7 @@ Tehtävä: Automatisoi valitsemasi demonin asennus Ansiblella.
 
  # c) Asetus.
 
-Tehtävä: Muuta asetustiedostoa herralla (master, "control node") ja aja ansible uudestaan. Osoita, että asetukset tulivat käyttöön.
+**Tehtävä:** Muuta asetustiedostoa herralla (master, "control node") ja aja ansible uudestaan. Osoita, että asetukset tulivat käyttöön.
 
 
 
@@ -53,7 +53,7 @@ Tehtävä: Muuta asetustiedostoa herralla (master, "control node") ja aja ansibl
 
  # d) Paikka remonttiin.
 
-Tehtävä: Riko jotain asetuksia. Voit esimerkiksi poistaa demonin 'sudo apt-get purge foobar' (purge poistaa myös asetustiedostoja), poistaa asennuksen yhteydessä tulevan kansion (sudo rm -r /etc/foobar/ # vaarallista) tms. Ja sitten ajaa ansible-roolisi uudestaan ja todeta, että se korjaa tilanteen.
+**Tehtävä:** Riko jotain asetuksia. Voit esimerkiksi poistaa demonin 'sudo apt-get purge foobar' (purge poistaa myös asetustiedostoja), poistaa asennuksen yhteydessä tulevan kansion (sudo rm -r /etc/foobar/ # vaarallista) tms. Ja sitten ajaa ansible-roolisi uudestaan ja todeta, että se korjaa tilanteen.
 
 
 
@@ -66,7 +66,7 @@ Tehtävä: Riko jotain asetuksia. Voit esimerkiksi poistaa demonin 'sudo apt-get
 
  # e) Idempotentti.
 
-Tehtävä: Osoita, että tilasi on idempotentti.
+**Tehtävä:** Osoita, että tilasi on idempotentti.
 
 
 
