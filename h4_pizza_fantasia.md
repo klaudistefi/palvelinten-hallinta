@@ -1,7 +1,7 @@
-**Kurssi: ** Palvelinten Hallinta ICI001AS3A-3017 <br>
-**Tekijä: ** Klaudija Majamäki <br>
-**Käyttöjärjestelmä: ** Pöytätietokone, Windows 11 -kone <br>
-**Virtuaalikone: ** Oracle Virtual Box Debian <br>
+**Kurssi:** Palvelinten Hallinta ICI001AS3A-3017 <br>
+**Tekijä:** Klaudija Majamäki <br>
+**Käyttöjärjestelmä:** Pöytätietokone, Windows 11 -kone <br>
+**Virtuaalikone:** Oracle Virtual Box Debian <br>
 
 
 
