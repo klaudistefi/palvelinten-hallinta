@@ -344,18 +344,18 @@ systemctl status apache2
 
 
 # Lähteet: 
-Tero Karvinen – Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa)
+Tero Karvinen – Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa) Luettu: 25.10.2026
 
-Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ 
+Raportin kirjoittaminen. Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 25.10.2026
 
-Sudo without password. Luettavissa: https://terokarvinen.com/passwordless-sudo/ 
+Sudo without password. Luettavissa: https://terokarvinen.com/passwordless-sudo/ Luettu: 31.10.2026
 
-Passwordless Sudo with Ansible. Luettavissa: https://terokarvinen.com/passwordless-sudo-with-ansible/
+Passwordless Sudo with Ansible. Luettavissa: https://terokarvinen.com/passwordless-sudo-with-ansible/ Luettu: 31.10.2026
 
-12.3 mkdir: Make directories. Luettavissa: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html 
+12.3 mkdir: Make directories. Luettavissa: https://www.gnu.org/software/coreutils/manual/html_node/mkdir-invocation.html Luettu: 31.10.2026 
 
-How to Configure Apache web server on Linux using Ansible. Luettavissa: https://dev.to/paschalogu/how-to-configure-apache-web-server-on-linux-using-ansible-2mcd 
+How to Configure Apache web server on Linux using Ansible. Luettavissa: https://dev.to/paschalogu/how-to-configure-apache-web-server-on-linux-using-ansible-2mcd Luettu: 31.10.2026
 
-Sandwich. Luettavissa: https://xkcd.com/149/
+Sandwich. Luettavissa: https://xkcd.com/149/ Luettu: 1.11.2026
 
-Käytin tekoälyä tekstin kieliopin ja kirjoitusvirheiden tarkistamiseen.
+Käytin tekoälyä tekstin kieliopin ja kirjoitusvirheiden tarkistamiseen. 
