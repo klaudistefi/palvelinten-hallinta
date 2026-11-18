@@ -188,3 +188,7 @@ Installing NGINX Open Source Luettavissa: https://docs.nginx.com/nginx/admin-gui
 Galaxy Developer Guide.  Luettavissa: https://docs.ansible.com/projects/ansible/latest/galaxy/dev_guide.html Luettu: 10.11.2026
 
 ansible.builtin.service module – Manage services. Luettavissa: https://docs.ansible.com/projects/ansible/latest/collections/ansible/builtin/service_module.html Luettu: 10.11.2026
+
+
+Käytin tekoälyä tekstin kieliopin ja kirjoitusvirheiden tarkistamiseen.
+
