@@ -23,7 +23,7 @@
 -	Tärkeä ominaisuus on idempotenttisuus. Järjestelmä tarkistaa ensin nykyisen tilansa ja tekee muutoksia vain silloin, kun niitä tarvitaan. 
 
 ### 4.12.3.1 Dependencies Between Main Functions (115-117. Tärkeimmät rakennuspalikat.) <br>
-- Käyttäjien hallinnassa käytetään user ja group funktioita, mutta taas tiedostojen käsittelyyn tarvitaan file, directory ja symlink funktioita.
+- Ja käyttäjien hallinnassa käytetään user ja group funktioita, mutta taas tiedostojen käsittelyyn tarvitaan file, directory ja symlink funktioita.
 
 
  # a) Räpylä.
