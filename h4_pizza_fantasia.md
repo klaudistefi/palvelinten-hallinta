@@ -12,11 +12,19 @@
 
 # x) Tiivistelmät
 
-### Karvinen 2023: Configuration Management of Distributed Systems over Unreliable and Hostile Networks (pdf, ̣mirrors: local, archive.org), vain nämä kohdat:
+### Karvinen 2023: Configuration Management of Distributed Systems over Unreliable and Hostile Networks:
 
-4.12.1 Size and Complexity of Some DSLs (112. Ominaisuuksien määrä.) <br>
-4.12.2 Use of DSL Functions in Case Configuration (112-115. Mitä oikeasti käytetään.) <br>
-4.12.3.1 Dependencies Between Main Functions (115-117. Tärkeimmät rakennuspalikat.) <br>
+### 4.12.1 Size and Complexity of Some DSLs (112. Ominaisuuksien määrä.) <br>
+-	DSL (Domain Specific Language) on  tiettyyn käyttötarkoitukseen suunniteltua kuvauskieltä. Salt ja Puppeti.
+-	Salt työkalu sisältää 510 funktiota ja Puppet 113 funktiota, niillä voi muokata agentti koneiden tilaa.
+
+### 4.12.2 Use of DSL Functions in Case Configuration (112-115. Mitä oikeasti käytetään.) <br>
+-	Tärkeimmät toiminnot - package, file, service, user, group ja exec. Voidaan asentaa ohjelmia, hallita tiedostoja ja käyttäjiä sekä käynnistää palveluita.
+-	Tärkeä ominaisuus on idempotenttisuus. Järjestelmä tarkistaa ensin nykyisen tilansa ja tekee muutoksia vain silloin, kun niitä tarvitaan. 
+
+### 4.12.3.1 Dependencies Between Main Functions (115-117. Tärkeimmät rakennuspalikat.) <br>
+- Käyttäjien hallinnassa käytetään user ja group funktioita, mutta taas tiedostojen käsittelyyn tarvitaan file, directory ja symlink funktioita.
+
 
  # a) Räpylä.
 
