@@ -255,3 +255,6 @@ Mitä `sudo rm -rf /` tekee Linuxilla? Luettavissa: https://www.reddit.com/r/Ask
 
 What is idempotency in Ansible? Luettavissa:   https://medium.com/@haroldfinch01/what-is-idempotency-in-ansible-9d264c116193 Luettu: 18.11.2026
 
+
+Käytin tekoälyä tekstin kieliopin ja kirjoitusvirheiden tarkistamiseen.
+
