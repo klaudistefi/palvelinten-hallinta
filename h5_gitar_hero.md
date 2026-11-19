@@ -83,9 +83,9 @@
 
 
 # Lähteet:
-Tero Karvinen - Palvelinten Hallinta. Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu: 25.10.2026
+Karvinen, Tero 2026.  Palvelinten Hallinta. Luettavissa: https://terokarvinen.com/linux-palvelimet/ Luettu: 25.10.2026
 
-Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 25.10.2026
+Karvinen, Tero 2026. Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ Luettu: 25.10.2026
 
 
 
