@@ -101,14 +101,14 @@ http://localhost
 
 
 # Lähteet: 
-Tero Karvinen – Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa)
+Karvinen, Tero 2026.  Palvelinten Hallinta. Luettavissa: [https://terokarvinen.com/linux-palvelimet/](https://terokarvinen.com/palvelinten-hallinta/#h0-oikeasti-netissa)
 
-Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ 
+Karvinen, Tero 2026. Raportin kirjoittaminen Luettavissa: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/ 
 
 H1 Hei Ansiblen maailma. Luettavissa:
 [Downloading Debian. https://www.debian.org/download](https://github.com/klaudistefi/palvelinten-hallinta/blob/main/h1_hei_ansiblen_maailma.md )
 
-h3 Hello Web Server. Luettavissa:
+Majamäki, Klaudija 2026. h3 Hello Web Server. Luettavissa:
 https://github.com/klaudistefi/linux-course/blob/main/h3_hello_web_server.md
 
 Install and Configure Apache. Luettavissa: https://ubuntu.com/tutorials/install-and-configure-apache#1-overview
